@@ -22,7 +22,7 @@ select * from pessoas;
 /*#comando para descrever todos os campos da tabela pessoas */
 desc pessoas;
 
-/*#Agora vamos alterar a tabela criada anteriormente e adicionar um novo campo chamado de PROFISSÃO, por padrão a adição de uma nova coluna acontece no */último campo.
+/*#Agora vamos alterar a tabela criada anteriormente e adicionar um novo campo chamado de PROFISSÃO, por padrão a adição de uma nova coluna acontece no último campo.*/
 alter table pessoas add column profissao varchar(10);
 
 /*# um desc para visualizar*/
