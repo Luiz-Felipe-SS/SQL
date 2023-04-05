@@ -44,3 +44,13 @@ alter table pessoas add column codigo int first;
 /*agora vamos usar comandos para modificar os campos usando o comando 'modifh'
 aqui modifiquei o tamanho do varchar da coluna 'profissao' para o tamanho de 50*/
 alter table pessoas modify column profissao varchar(50);
+
+/*o ruim do 'modify' é que ele não funciona quando voce quer alterar o nome do campo
+#para isso precissamos usar o comado 'chage'*/
+alter table pessoas change profissao prof varchar(15); 
+
+/*para renomiar o nome da tabela é preciso usar o comando 'rename to'
+alter table pessoas rename to humano;*/
+
+/*desc para visualizar*/
+desc humano;
