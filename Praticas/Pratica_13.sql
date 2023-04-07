@@ -35,7 +35,7 @@ primary key(id_cliente)
  foreign key(numero_Mesa) references prat13_mesa(numero_Mesa) on delete cascade on update restrict,
  primary key(id_pedido)
  );
- ;
+ 
  
  
  insert into pedido(numero_Mesa , id_cliente, prato) values 
